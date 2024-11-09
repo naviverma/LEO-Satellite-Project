@@ -1,0 +1,40 @@
+{
+    "info": [
+        {
+            "ip": "127.0.0.1",
+            "port": 8765,
+            "location": {
+                "latitude": 10.0,
+                "longitude": 20.0,
+                "altitude": 100.0
+            }
+        },
+        {
+            "ip": "127.0.0.1",
+            "port": 8766,
+            "location": {
+                "latitude": 15.0,
+                "longitude": 25.0,
+                "altitude": 110.0
+            }
+        },
+        {
+            "ip": "127.0.0.1",
+            "port": 8767,
+            "location": {
+                "latitude": 18.0,
+                "longitude": 22.0,
+                "altitude": 105.0
+            }
+        },
+        {
+            "ip": "127.0.0.1",
+            "port": 8768,
+            "location": {
+                "latitude": 11.0,
+                "longitude": 21.0,
+                "altitude": 95.0
+            }
+        }
+    ]
+}
