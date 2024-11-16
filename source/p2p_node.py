@@ -18,7 +18,7 @@ class SatelliteNode:
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client_conn = None
         self.next_neighbor = None
-        self.prev_neighbor = None
+        self.prev_neighbor = None  # Initialize prev_neighbor to avoid AttributeError
 
         # Bind and listen as a server
         self.server_socket.bind(self.server_addr)
@@ -46,12 +46,20 @@ class SatelliteNode:
             dist = self.calculate_distance(self.location, peer_location)
             distances.append((peer, dist))
 
-        # Sort by distance and select the two closest neighbors
+        # Sort by distance and select the closest neighbors
         distances.sort(key=lambda x: x[1])
+        
         if distances:
+            # Select the closest peer as the next neighbor
             self.next_neighbor = distances[0][0]
+            
+            # Avoid circular loops: Make sure that the selected next neighbor
+            # doesn't assign the current node as its next neighbor.
             if len(distances) > 1:
-                self.prev_neighbor = distances[1][0]
+                for peer in distances[1:]:
+                    if peer[0] != self.next_neighbor:
+                        self.prev_neighbor = peer[0]
+                        break
 
         print(f"[INFO] Next Neighbor: {self.next_neighbor}")
         print(f"[INFO] Previous Neighbor: {self.prev_neighbor}")
@@ -83,11 +91,17 @@ class SatelliteNode:
                 message = loads(data)
                 print(f"[INFO] Received message from {addr}: {message}")
 
-                # Relay message if not the final destination
-                if message['dest'] != self.server_addr:
+                # If message is intended for this node, deliver it
+                if message['dest'] == self.server_addr:
+                    print(f"[INFO] Message reached destination: {message}")
+                    break  # Exit after successfully delivering the message
+
+                # Relay message to the next neighbor (if it's not the destination)
+                if self.next_neighbor:
                     self.relay_message(message)
                 else:
-                    print(f"[INFO] Message reached destination: {message}")
+                    print("[INFO] No next neighbor to forward message.")
+                    break
             except Exception as e:
                 print(f"[ERROR] Error handling client {addr}: {e}")
                 break
