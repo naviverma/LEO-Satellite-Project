@@ -1,4 +1,18 @@
 {
+    "base": {
+        "ip": "127.0.0.1",
+        "port": 8000,
+        "latitude": 12.0,
+        "longitude": 20.0,
+        "altitude": 0.0
+    },
+    "destination": {
+        "ip": "127.0.0.1",
+        "port": 9000,
+        "latitude": 19.0,
+        "longitude": 23.0,
+        "altitude": 0.0
+    },
     "info": [
         {
             "ip": "127.0.0.1",

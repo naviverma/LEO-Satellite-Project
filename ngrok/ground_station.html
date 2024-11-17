@@ -21,7 +21,7 @@
     <button onclick="sendCommand('TURN_RIGHT')">Turn Right</button>
 
     <script>
-        const socket = new WebSocket("wss://21f1-89-100-248-199.ngrok-free.app");
+        const socket = new WebSocket("ws://127.0.0.1:7998");
 
         socket.onopen = () => {
             console.log("Connected to WebSocket server");

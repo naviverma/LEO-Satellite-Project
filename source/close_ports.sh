@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the list of ports used by the P2P nodes
-PORTS=("8765" "8766" "8767" "8768")
+PORTS=("7998" "8000" "8765" "8766" "8767" "8768" "9000")
 
 echo "Searching for processes using the specified ports..."
 
