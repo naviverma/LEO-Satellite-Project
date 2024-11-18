@@ -1,0 +1,99 @@
+{
+    "info": [
+        {
+            "name": "Satellite A",
+            "ip": "127.0.0.1",
+            "ports": [
+                {"port": 8701, "usage": "movements"},
+                {"port": 8702, "usage": "power"},
+                {"port": 8703, "usage": "battery"},
+                {"port": 8704, "usage": "temperature"},
+                {"port": 8705, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": -45.0,
+                "longitude": 60.0,
+                "altitude": 400.0
+            }
+        },
+        {
+            "name": "Satellite B",
+            "ip": "127.0.0.1",
+            "ports": [
+                {"port": 8711, "usage": "movements"},
+                {"port": 8712, "usage": "power"},
+                {"port": 8713, "usage": "battery"},
+                {"port": 8714, "usage": "temperature"},
+                {"port": 8715, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 30.0,
+                "longitude": -50.0,
+                "altitude": 700.0
+            }
+        },
+        {
+            "name": "Satellite C",
+            "ip": "127.0.0.1",
+            "ports": [
+                {"port": 8721, "usage": "movements"},
+                {"port": 8722, "usage": "power"},
+                {"port": 8723, "usage": "battery"},
+                {"port": 8724, "usage": "temperature"},
+                {"port": 8725, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 85.0,
+                "longitude": -120.0,
+                "altitude": 550.0
+            }
+        },
+        {
+            "name": "Satellite D",
+            "ip": "127.0.0.1",
+            "ports": [
+                {"port": 8731, "usage": "movements"},
+                {"port": 8732, "usage": "power"},
+                {"port": 8733, "usage": "battery"},
+                {"port": 8734, "usage": "temperature"},
+                {"port": 8735, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": -10.0,
+                "longitude": 90.0,
+                "altitude": 600.0
+            }
+        },
+        {
+            "name": "Satellite E",
+            "ip": "127.0.0.1",
+            "ports": [
+                {"port": 8741, "usage": "movements"},
+                {"port": 8742, "usage": "power"},
+                {"port": 8743, "usage": "battery"},
+                {"port": 8744, "usage": "temperature"},
+                {"port": 8745, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 70.0,
+                "longitude": 30.0,
+                "altitude": 450.0
+            }
+        }
+    ],
+    "robot_info": {
+        "ip": "127.0.0.1",
+        "ports": [
+            {"port": 9001, "usage": "movements"},
+            {"port": 9002, "usage": "power"},
+            {"port": 9003, "usage": "battery"},
+            {"port": 9004, "usage": "temperature"},
+            {"port": 9005, "usage": "delivery status"}
+        ],
+        "location": {
+            "latitude": 15.0,
+            "longitude": -80.0,
+            "altitude": 0.0
+        }
+    }
+}
