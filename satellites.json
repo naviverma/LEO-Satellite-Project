@@ -1,0 +1,144 @@
+{
+    "info": [
+        {
+            "name": "Satellite A",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33001, "usage": "movements"},
+                {"port": 33002, "usage": "power"},
+                {"port": 33003, "usage": "battery"},
+                {"port": 33004, "usage": "temperature"},
+                {"port": 33005, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": -45.0,
+                "longitude": 60.0,
+                "altitude": 400.0
+            }
+        },
+        {
+            "name": "Satellite B",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33011, "usage": "movements"},
+                {"port": 33012, "usage": "power"},
+                {"port": 33013, "usage": "battery"},
+                {"port": 33014, "usage": "temperature"},
+                {"port": 33015, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 30.0,
+                "longitude": -50.0,
+                "altitude": 700.0
+            }
+        },
+        {
+            "name": "Satellite C",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33021, "usage": "movements"},
+                {"port": 33022, "usage": "power"},
+                {"port": 33023, "usage": "battery"},
+                {"port": 33024, "usage": "temperature"},
+                {"port": 33025, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 85.0,
+                "longitude": -120.0,
+                "altitude": 550.0
+            }
+        },
+        {
+            "name": "Satellite D",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33031, "usage": "movements"},
+                {"port": 33032, "usage": "power"},
+                {"port": 33033, "usage": "battery"},
+                {"port": 33034, "usage": "temperature"},
+                {"port": 33035, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": -10.0,
+                "longitude": 90.0,
+                "altitude": 600.0
+            }
+        },
+        {
+            "name": "Satellite E",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33041, "usage": "movements"},
+                {"port": 33042, "usage": "power"},
+                {"port": 33043, "usage": "battery"},
+                {"port": 33044, "usage": "temperature"},
+                {"port": 33045, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 70.0,
+                "longitude": 30.0,
+                "altitude": 450.0
+            }
+        },
+        {
+            "name": "Ground Station A",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33101, "usage": "movements"},
+                {"port": 33102, "usage": "power"},
+                {"port": 33103, "usage": "battery"},
+                {"port": 33104, "usage": "temperature"},
+                {"port": 33105, "usage": "delivery status"}
+            ],
+            "location": {
+                "latitude": 10.0,
+                "longitude": 20.0,
+                "altitude": 0.0
+            }
+        },
+        {
+            "name": "Ground Station B",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33111, "usage": "movements"},
+                {"port": 33112, "usage": "power"},
+                {"port": 33113, "usage": "battery"},
+                {"port": 33114, "usage": "temperature"}
+            ],
+            "location": {
+                "latitude": 15.0,
+                "longitude": 25.0,
+                "altitude": 0.0
+            }
+        },
+        {
+            "name": "Ground Station C",
+            "ip": "10.35.70.44",
+            "ports": [
+                {"port": 33121, "usage": "movements"},
+                {"port": 33122, "usage": "power"}
+            ],
+            "location": {
+                "latitude": 20.0,
+                "longitude": 30.0,
+                "altitude": 0.0
+            }
+        }
+    ],
+    "robot_info": {
+        "name": "Robot",
+        "ip": "10.35.70.22",
+        "ports": [
+            {"port": 33201, "usage": "movements"},
+            {"port": 33202, "usage": "power"},
+            {"port": 33203, "usage": "battery"},
+            {"port": 33204, "usage": "temperature"},
+            {"port": 33205, "usage": "delivery status"}
+        ],
+        "location": {
+            "latitude": 15.0,
+            "longitude": -80.0,
+            "altitude": 0.0
+        }
+    }
+}
